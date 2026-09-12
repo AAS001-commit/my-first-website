@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f5f8;
+    color: #222;
+    min-height: 100vh;
+}
+
+header {
+    background: #24292f;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.card {
+    background: white;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    margin-bottom: 15px;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+button {
+    margin-top: 20px;
+    padding: 13px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #238636;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.96);
+}
+
+#message {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+
+</style>
+
+<body>
+
+    <header>
+        <h1>My First Website</h1>
+        <p>Welcome to my first GitHub project 🚀</p>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2>Hello, GitHub!</h2>
+            <p>
+                I am learning Web Development and GitHub.
+                This is my first website project.
+            </p>
+
+            <button onclick="showMessage()">Click Me</button>
+
+            <p id="message"></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>Created by AAS001-commit © 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script type="text/javascript">function showMessage() {
+    document.getElementById("message").textContent =
+    "Congratulations! 🎉 Abubakar Ahmad Sulaiman.";
+    }</script>
+</body>
+</html>
